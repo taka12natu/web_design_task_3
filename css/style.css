@@ -178,7 +178,7 @@ main {
     border-width: 25px 18px 19px 0;
 }
 .pr_box_body {
-    margin-top: 10px;
+    margin: 20px 0;
     background-color: darkseagreen;
 }
 .pr_box_bt_box {
@@ -188,6 +188,12 @@ main {
 .pr_box_bt {
     background-color: dimgray;
     box-shadow: -2px -2px 3px black inset;
+    position: relative;
+}
+.modal_icon:after {
+    content: url(../img/modal.png);
+    position: absolute;
+    right: 20px;
 }
 .btn_margin {
     margin: 0 10px;
@@ -249,6 +255,7 @@ main {
 .product_box {
     width: 30%;
     background-color: ghostwhite;
+    margin-bottom: 50px;
 }
 .product_box:nth-child(1) {
     margin-right: 10%;
@@ -261,7 +268,10 @@ main {
     margin-top: 5px;
     padding: 5px 40px;
 }
-.article_content_title {
+.link_icon:after {
+    content: url(../img/link.png);
+    position: absolute;
+    right: 20px;
 }
 footer {
     background-color: blue;
@@ -275,4 +285,73 @@ footer {
     padding: 70px 0 20px 30px;
 }
 @media only screen and (max-width: 600px){   
+    .header_logo {
+        margin: 0 auto;
+    }
+    .side {
+        display: none;
+    }
+    .main_box {
+        width: 100%;
+    }
+    .movie {
+        margin: 0 auto;
+    }
+    .info {
+        display: block;
+        padding: 20px 0;
+        height: auto;
+    }
+    .info_title {
+        margin: 0 auto;
+    }
+    .v_line {
+        margin: 15px 100px;
+    }
+    .info_list {
+        margin: 0 auto;
+    }
+    .pr_box {
+        display: block;
+    }
+    .pr_box_img, .pr_box_text {
+        width: 100%;
+    }
+    .article_box {
+        display: block;
+    }
+    .article_content {
+        width: 100%;
+    }
+    .article_img {
+        height: auto;
+    }
+    .article_btn {
+        display: none;
+    }
+    .article_sp_btn {
+        width: 100%;
+    }
+    .article_content {
+        margin-top: 50px;
+    }
+
+    .product {
+        display: block;
+        width: 100%;
+    }
+    .product_box {
+        width: 100%;
+    }
+    .product_img {
+        height: auto;
+    }
+    .footer_logo {
+        margin-left: 10px;
+    }
 }
+@media only screen and (min-width: 601px){
+    .article_sp_btn {
+        display: none;
+    }
+}   

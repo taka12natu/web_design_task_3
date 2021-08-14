@@ -23,15 +23,15 @@
 .main_visual {
     position: relative;
 }
-.menu {
+#menu {
     top: 0;
     position: absolute;
     opacity: 0.5;
-    height: 40px;
     background-color: blue;
     width: 100%;
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 .menu_item {
 	padding: 5px 10px;
@@ -208,7 +208,7 @@ main {
     display: flex;
     justify-content: space-between;
     background-color: gainsboro;
-    padding: 0 5% 30px;
+    padding: 5% 30px;
 }
 .article_content {
     width: 30%;
@@ -217,8 +217,6 @@ main {
 .article_img {
     width: 100%;
     height: 150px;
-}
-.article_content_title {
 }
 .btn {
     background-color: hotpink;
@@ -288,14 +286,44 @@ footer {
     .header_logo {
         margin: 0 auto;
     }
+    #sp_menu_open {
+        position: fixed;
+        top: 10px;
+        right: 5px;
+        width: 50px;
+    }
+    #sp_menu_close {
+        position: fixed;
+        top: 10px;
+        right: 5px;
+        width: 50px;
+        display: none;
+    }
+    /*  後で検証 
+    #show {
+        opacity: 1;
+    }
+    #hide {
+        opacity: 0;
+    } */
+    #menu {
+        display: none;
+        text-align: center;
+        font-size: 1.8em;
+        background-color: black;
+        height: 100vh;
+    }
+    .menu_item {
+        margin: 50px 0;
+    }
     .side {
         display: none;
     }
     .main_box {
         width: 100%;
     }
-    .movie {
-        margin: 0 auto;
+    .movie, .img_box {
+        margin: 5% auto;
     }
     .info {
         display: block;
@@ -335,7 +363,6 @@ footer {
     .article_content {
         margin-top: 50px;
     }
-
     .product {
         display: block;
         width: 100%;
@@ -351,7 +378,10 @@ footer {
     }
 }
 @media only screen and (min-width: 601px){
-    .article_sp_btn {
+    .sp_only {
+        display: none;
+    }
+    #sp_menu_open, #sp_menu_close {
         display: none;
     }
 }   

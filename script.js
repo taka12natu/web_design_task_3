@@ -10,9 +10,17 @@ $(function(){
         $(this).fadeOut("normal");
         $("#sp_menu_open").fadeIn("normal");
         $("#menu").fadeOut("normal");
-    });
+    }); 
 
-   
+    $('.js-modal-open').on('click',function(){
+        $('.js-modal').fadeIn();
+        return false;
+    });
+    
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
 });
 
 function sliderSetting(){
@@ -40,6 +48,13 @@ $(window).resize( function() {
   sliderSetting();
 });
 
+
+$(function(){
+    $(".main_img:not(:first-child)").hide();
+    setInterval(function() {
+      $(".main_img:first-child").fadeOut("slow").next("img").fadeIn("slow").end().appendTo(".main_img_box");
+    },5000);
+});
 
 /*後で検証  
    $("#sp_menu_open").on("click", function(){   

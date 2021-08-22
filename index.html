@@ -22,7 +22,12 @@
         </div>
 
         <div class="main_visual">
-            <img src="./img/main_03.png" alt="none" class="main_img">
+            <div class="main_img_box">
+                <img src="./img/main_01.png" alt="none" class="main_img">
+                <img src="./img/main_02.png" alt="none" class="main_img">
+                <img src="./img/main_03.png" alt="none" class="main_img">
+                <img src="./img/main_04.png" alt="none" class="main_img">
+            </div>
             <ul id="menu">
                 <li class="menu_item">top</li>
                 <li class="menu_item">top</li>
@@ -112,17 +117,17 @@
                         <div class="article_content">
                             <img src="./img/IMG_1044.jpeg" alt="" class="article_img">
                             <div class="article_content_title">マンション買うならいくら？</div>
-                            <button class="btn sp_only">欲しい</button>
+                            <button class="btn article_sp_btn">欲しい</button>
                         </div>
                         <div class="article_content">
                             <img src="./img/IMG_1044.jpeg" alt="" class="article_img">
                             <div class="article_content_title">マンション買うならいくら？</div>
-                            <button class="btn sp_only">欲しい</button>
+                            <button class="btn article_sp_btn">欲しい</button>
                         </div>
                         <div class="article_content">
                             <img src="./img/IMG_1044.jpeg" alt="" class="article_img">
                             <div class="article_content_title">マンション買うならいくら？</div>
-                            <button class="btn sp_only">欲しい</button>
+                            <button class="btn article_sp_btn">欲しい</button>
                         </div>
                     </div>
                     <button class="btn article_btn">メルカソで買い物する</button>
@@ -137,7 +142,7 @@
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                         </div>
                         <div class="pr_box_bt_box">
-                            <button class="pr_box_bt wide_btn modal_icon">空の写真をもっと見る</button>
+                            <button class="pr_box_bt wide_btn modal_icon js-modal-open">空の写真をもっと見る</button>
                         </div>
                     </div>
                 </div>
@@ -170,7 +175,15 @@
                 </div>
             </div>
         </div>
-    
+        <!--　モーダルウィンドウ -->
+        <div class="modal js-modal">
+            <div class="modal_bg js-modal-close"></div>
+            <div class="modal_content">
+                <img src="./img/IMG_1319.jpeg" alt="" class="pr_img">
+                <a class="js-modal-close" href="">
+                    <i class="fas fa-times fa-2x modal-close-btn"></i> </a>
+            </div>
+        </div>
     </main>
 
     <footer>

@@ -2,13 +2,13 @@
 
 //スマホメニューボタン アコーディオン表示
 $("#sp_menu_open").on("click", function(){
-    $("#menu").slideDown(1000);
+    $("#menu").slideDown(800);
     $(this).fadeOut("normal");
     $("#sp_menu_close").fadeIn("normal");
 });
 
 $("#sp_menu_close").on("click", function(){
-    $("#menu").slideUp(1000);
+    $("#menu").slideUp(800);
     $(this).fadeOut("normal");
     $("#sp_menu_open").fadeIn("normal");
 });

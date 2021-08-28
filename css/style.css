@@ -81,7 +81,7 @@ main {
 }
 .side_img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-bottom: #434343 1px solid;
 }

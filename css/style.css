@@ -455,6 +455,7 @@ footer {
     }
     .info_title {
         margin: 0 auto;
+        font-size: 1rem;
     }
     .v_line {
         margin: 15px 100px;
@@ -462,7 +463,7 @@ footer {
     .info_list {
         margin-left: 10%;
         width: 90%;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .pr_box {
         display: block;
@@ -493,6 +494,11 @@ footer {
     }
     .pr_box_btn {
         width: 50%;
+        margin: 0 10px;
+    }
+    .brown-btn {
+        padding: 8px 10px;
+        font-size: 1.0rem;
     }
     .pr_img {
         width: 100%;
@@ -518,7 +524,7 @@ footer {
     .article_sp_btn {
         width: 100%;
         padding: 10px 0;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .article_content {
         margin-top: 50px;
@@ -531,14 +537,14 @@ footer {
         width: 100%;
     }
     .product_box_title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .product_img {
         height: auto;
     }
     .product_btn {
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     .footer_logo {
         margin: 0;
